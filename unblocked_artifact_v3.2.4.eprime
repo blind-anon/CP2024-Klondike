@@ -188,7 +188,7 @@ forAll card : CARDS .
         stage_played[card] > foundation_dependency_stage[card - 1]
         \/ stage_played[card] > min(tableau_dependency_stage[tableau_dependencies[card, 1]], tableau_dependency_stage[tableau_dependencies[card, 2]]),
 
-gh$ tableau spaces
+$ tableau spaces
 $ originally empty piles act as a space immediately
 forAll pile : PILES .
     firstFaceUpCards[pile] = 0 -> 
